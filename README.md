@@ -21,7 +21,7 @@ This guide assumes you are using a Mac to set things up, if you're using Linux o
 
 ## Download the video
 
-First, install [`youtube-dl`](https://rg3.github.io/youtube-dl/), then use it to download the video you want to play. Depending on the length of video, this may take a really long time and will require 8.64GB of free disk space. Luckily `youtube-dl` supports resuming partially downloaded videos.
+First, install [`youtube-dl`](https://rg3.github.io/youtube-dl/), then use it to download the video you want to play. You could play a completely different video, but we'll assume you're going with the BergensBanen. Depending on the length of video, this may take a really long time and will require 8.64GB of free disk space. Luckily `youtube-dl` supports resuming partially downloaded videos, so don't worry if your connection gets interrupted.
 
 ```
 youtube-dl "https://www.youtube.com/watch?v=z7VYVjR_nwE"
@@ -39,9 +39,9 @@ You should see a list of mounted filesystems, and you need to figure out which o
 
 If you're uncertain, try checking `df` before and after you insert the SD card and check for a new item appearing in the list.
 
-__Important__: if you get the device number wrong, you could easily format the wrong disk. Don't do that, it will ruin your whole day.
+__Important__: if you get the device number wrong, you could easily format the wrong disk. Don't do that, it will ruin your whole day. Seriously, it sucks.
 
-Next, type in the following variables. Yours will likely be different. Don't continue if you're not sure if these are the correct values.
+Next, type in the following variables. Yours will likely be different. Don't continue if you're not sure if you've chosen the correct values.
 
 ```
 disknum=2
