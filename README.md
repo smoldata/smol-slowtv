@@ -192,4 +192,17 @@ Ready to see if it works? Reboot the Pi.
 sudo reboot
 ```
 
-Once you reboot your Pi and plug its HDMI cable into a TV, your video should start playing automatically, on a loop.
+Once you reboot your Pi and plug its HDMI cable into a TV, your video should start playing automatically, on a loop. You can remove the USB thumb drive once it reboots.
+
+## How to shutdown your Pi
+
+One annoying thing that happens from time to time is that the Pi's disk can get corrupted from pulling the power. When possible, it's best to login via SSH and shutdown using this command:
+
+```
+sudo shutdown -h now
+```
+
+## See also
+
+* [Playing video on the Raspberry Pi](https://www.raspberrypi.org/documentation/usage/video/)
+* [omxplayer](https://elinux.org/Omxplayer)
