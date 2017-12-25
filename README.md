@@ -21,7 +21,7 @@ This guide assumes you are using a Mac to set things up, if you're using Linux o
 
 ## Download the video
 
-First, install [`youtube-dl`](https://rg3.github.io/youtube-dl/), then use it to download the video you want to play. Depending on the length of video, this may take a really long time. Luckily `youtube-dl` supports resuming partially downloaded videos.
+First, install [`youtube-dl`](https://rg3.github.io/youtube-dl/), then use it to download the video you want to play. Depending on the length of video, this may take a really long time and will require 8.64GB of free disk space. Luckily `youtube-dl` supports resuming partially downloaded videos.
 
 ```
 youtube-dl "https://www.youtube.com/watch?v=z7VYVjR_nwE"
