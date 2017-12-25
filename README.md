@@ -186,4 +186,10 @@ That will take a while.
 
 ## Reboot
 
+Ready to see if it works? Reboot the Pi.
+
+```
+sudo reboot
+```
+
 Once you reboot your Pi and plug its HDMI cable into a TV, your video should start playing automatically, on a loop.
