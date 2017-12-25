@@ -16,6 +16,7 @@ When the Pi boots up, it updates its time using `ntpdate`, pulls down any update
 * 16GB Micro SD card
 * 16GB USB thumb drive formatted for Mac OS HFS+
 * A working wifi network
+* A Mac with an SD card slot
 
 This guide assumes you are using a Mac to set things up, if you're using Linux or Windows some of the details will be slightly different.
 
@@ -32,7 +33,7 @@ You can leave this running in a separate Terminal tab. You should end up with a 
 ## Prepare Raspbian SD Card
 
 * Download [Raspbian Stretch Lite](https://www.raspberrypi.org/downloads/raspbian/)
-* Plug in the SD Card
+* Plug in the SD card
 * Open the terminal and type `df`
 
 You should see a list of mounted filesystems, and you need to figure out which one is the SD card. It will probably be last in the list, and will likely be called something like `NO NAME`. The left-most column will say which device number the SD card has. Look for something like `/dev/disk2`.
@@ -48,7 +49,7 @@ disknum=2
 raspbian=/Users/dphiffer/Downloads/2017-11-29-raspbian-stretch-lite.img
 ```
 
-Now we can write to the SD card using the variables we just set.
+Now we can write to the SD card using the variables we just set. That second `dd` command is the one to be careful about, it can overwrite disk data and cause a huge ruckus. It will take a while to complete.
 
 ```
 diskutil unmountDisk /dev/disk$disknum
