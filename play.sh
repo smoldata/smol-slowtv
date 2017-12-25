@@ -3,8 +3,18 @@
 sudo ntpdate time.nist.gov
 cd /usr/local/smol/smol-slowtv && git pull origin master
 
-video=/home/pi/bergensbanen.mp4
+video=/home/pi/video.mp4
 video_length=26053
+
+if [ $1 ]
+then
+	video=$1
+fi
+
+if [ $2 ]
+then
+	video_length=$2
+fi
 
 today=`date -u +%Y-%m-%d`
 #echo $today
