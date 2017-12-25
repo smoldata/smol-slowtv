@@ -6,6 +6,8 @@ A basic Raspberry Pi video player, designed to play with Very Long Videos such a
 
 When the Pi boots up, it updates its time using `ntpdate`, pulls down any updates from [this git repo](https://github.com/smoldata/smol-slowtv), then plays back starting from a specific timestamp based on the current UTC time. This allows for a [communal slow TV viewing experience](http://www.newyorker.com/culture/cultural-comment/slow-tv).
 
+If you're paranoid, you might want to comment out [the part where it auto-updates](https://github.com/smoldata/smol-slowtv/blob/master/play.sh#L10). I put that in there so that I could add new features later.
+
 ## Materials
 
 * Raspberry Pi (tested with [Pi 1 Model B+](https://www.raspberrypi.org/products/raspberry-pi-1-model-b/), and [Pi 3 Model B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/))
