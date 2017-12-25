@@ -63,7 +63,7 @@ sudo diskutil eject /dev/disk$disknum
 
 Insert the SD card into the Pi, plug in the HDMI cable, the keyboard, and power. You should see a boot sequence, and end up on a console login screen.
 
-Username: `pi`
+Username: `pi`  
 Password: `raspberry`
 
 Now you should run the Raspberry Pi config utility.
