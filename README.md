@@ -1,6 +1,10 @@
 # smol-slowtv
 
-This is a basic Raspberry Pi video player setup, designed to work with Very Long Videos, such as [BergensBanen minutt for minutt](https://www.youtube.com/watch?v=z7VYVjR_nwE&list=PL_WssN5hKWUY9exh9UonSJBO9ntpL137Y&index=1). One innovation to the video playback is that all players synchronize their playback. When the Pi boots up, it updates its time using `ntpdate`, pulls updates from [this git repo](https://github.com/smoldata/smol-slowtv), then plays back starting from a specific timestamp based on the current UTC time. This allows for a [shared communal slow TV viewing experience](http://www.newyorker.com/culture/cultural-comment/slow-tv).
+![Slow TV](https://slowtv.smoldata.org/img/smol-slowtv.jpg)
+
+A basic Raspberry Pi video player, designed to play with Very Long Videos such as [BergensBanen minutt for minutt](https://www.youtube.com/watch?v=z7VYVjR_nwE&list=PL_WssN5hKWUY9exh9UonSJBO9ntpL137Y&index=1). All players synchronize their playback, so that when you're watching you see the same thing as everyone else.
+
+When the Pi boots up, it updates its time using `ntpdate`, pulls down any updates from [this git repo](https://github.com/smoldata/smol-slowtv), then plays back starting from a specific timestamp based on the current UTC time. This allows for a [communal slow TV viewing experience](http://www.newyorker.com/culture/cultural-comment/slow-tv).
 
 ## Materials
 
