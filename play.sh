@@ -58,4 +58,4 @@ fi
 
 start="$start_h:$start_m:$start_s"
 
-/usr/bin/omxplayer -b --loop --no-osd --vol "-6000" --pos $start $video
+/usr/bin/omxplayer -b --loop --no-osd --vol "-6000" --pos "$start" $video
